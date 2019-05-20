@@ -1,0 +1,10 @@
+=> create server.js
+=> npm init
+=> npm install express
+=> add "angular": "1.7.x" to package.json dependencies
+=> Define npm start:
+    "start": "nodemon server.js"
+=> Automate npm install before npm start:
+    "prestart": "npm install"
+=> define copy-libs script in package.json to copy the libs we want :
+    "copy-libs": "cpx \"node_modules/{angular,angular-*}/**/*\" public/lib -C"
