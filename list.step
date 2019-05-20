@@ -12,4 +12,4 @@
     "copy-libs": "cpx \"node_modules/{angular,angular-*}/**/*\" public/lib -C"
 => if using jquery or bootstrap change (after npm install jquery and npm install bootstrap):
     "copy-libs": "cpx \"node_modules/{angular,angular-*,jquery/dist,bootstrap/dist}/**/*\" app/lib -C"
-=> add jasmine for unit test by: npm install jasmine
+=> add jasmine for unit test by: npm install jasmine (ignore npm Warn: fsevents cause fsevents is for macOs)
