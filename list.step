@@ -10,6 +10,6 @@
     "cpx": "^1.5.0"
 => define copy-libs script in package.json to copy the libs we want :
     "copy-libs": "cpx \"node_modules/{angular,angular-*}/**/*\" public/lib -C"
-
 => if using jquery or bootstrap change (after npm install jquery and npm install bootstrap):
     "copy-libs": "cpx \"node_modules/{angular,angular-*,jquery/dist,bootstrap/dist}/**/*\" app/lib -C"
+=> add jasmine for unit test by: npm install jasmine
