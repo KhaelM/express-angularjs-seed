@@ -8,12 +8,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
     "prestart": "npm install",
-    "copy-libs": "cpx \"node_modules/{angular,angular-*}/**/*\" public/lib -C"
+    "copy-libs": "cpx \"node_modules/{angular,angular-*}/**/*\" public/lib -C",
+    "postinstall": "npm run copy-libs"
   },
   "author": "Michaël Randrianarisona",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.0",
     "angular": "1.7.x"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0"
   }
 }
